@@ -35,7 +35,6 @@ public class ContinuousMovement : MonoBehaviour
     private void FixedUpdate()
     {
         CapsuleFollowHeadSet();
-
         Quaternion headYaw = Quaternion.Euler(0, rig.Camera.transform.eulerAngles.y, 0);
         Vector3 direction = headYaw * new Vector3(inputAxis.x, 0, inputAxis.y);
 

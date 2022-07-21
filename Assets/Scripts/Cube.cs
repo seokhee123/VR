@@ -8,6 +8,7 @@ public class Cube : MonoBehaviour
     void Update()
     {
         transform.position += Time.deltaTime * transform.forward * 2;
+        Destroy(gameObject, 10f);
     }
 
     /*void OnCollisionEnter(Collision collision)

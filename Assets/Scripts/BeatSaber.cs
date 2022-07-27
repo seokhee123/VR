@@ -30,6 +30,7 @@ public class BeatSaber : MonoBehaviour
                 for(int i =0; i<gameObjects.Length; i++)
                 {
                     gameObjects[i].AddComponent<Rigidbody>();
+                    Destroy(gameObjects[i], 3f);
                 }
                 //Destroy(hit.transform.gameObject, 3f);
                 //Destroy(gameObjects[0], 3f);

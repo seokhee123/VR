@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Item
   - Saber
+  - Bullet
   layers:
   - Default
   - TransparentFX

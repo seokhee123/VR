@@ -7,8 +7,9 @@ public class Pendulum : MonoBehaviour
     public float angle = 0;
 
     private float lerpTime = 0;
-    private float speed = 2f;
+    public float speed = 2f;
 
+    
     private void Update()
     {
         lerpTime += Time.deltaTime * speed;

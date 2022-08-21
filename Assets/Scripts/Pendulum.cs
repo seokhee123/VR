@@ -2,22 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PendulumMovement : MonoBehaviour
+public class Pendulum : MonoBehaviour
 {
     public float angle = 0;
 
     private float lerpTime = 0;
     private float speed = 2f;
 
-    void Update()
+    private void Update()
     {
-        lerpTime += Time.deltaTime + speed;
+        lerpTime += Time.deltaTime * speed;
         transform.rotation = CalculateMovementOfPendulum();
     }
 
     Quaternion CalculateMovementOfPendulum()
     {
-        return Quaternion.Lerp(Quaternion.Euler(Vector3.forward * angle), 
+        return Quaternion.Lerp(Quaternion.Euler(Vector3.forward * angle),
             Quaternion.Euler(Vector3.back * angle), GetLerpTParam());
     }
 

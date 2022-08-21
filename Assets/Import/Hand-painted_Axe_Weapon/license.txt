@@ -1,0 +1,11 @@
+Model Information:
+* title:	Hand-painted Axe Weapon
+* source:	https://sketchfab.com/3d-models/hand-painted-axe-weapon-eac890296fc84ff4bbff0cb6369b16e7
+* author:	Lumyk0 (https://sketchfab.com/lumennieuwesteeg3)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Hand-painted Axe Weapon" (https://sketchfab.com/3d-models/hand-painted-axe-weapon-eac890296fc84ff4bbff0cb6369b16e7) by Lumyk0 (https://sketchfab.com/lumennieuwesteeg3) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

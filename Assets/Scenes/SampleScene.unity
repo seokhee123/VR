@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2138677392}
-  m_IndirectSpecularColor: {r: 0.28323817, g: 0.36963558, b: 0.5011181, a: 1}
+  m_IndirectSpecularColor: {r: 0.2832383, g: 0.3696358, b: 0.5011187, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2748,7 +2748,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 78523990}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.69104666, y: 6.6000004, z: 0.17934036}
+  m_LocalPosition: {x: -0.69104666, y: 5.94, z: 0.17934036}
   m_LocalScale: {x: 0.06869253, y: 0.25681433, z: 1}
   m_Children:
   - {fileID: 886503725}
@@ -10217,7 +10217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beatPos: {fileID: 535260870}
-  mazePos: {fileID: 434794055}
+  mazePos: {fileID: 838757250}
 --- !u!114 &381564899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15652,7 +15652,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601421139}
   m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: 0.00824303, y: 6.6000004, z: 0.03432597}
+  m_LocalPosition: {x: 0.00824303, y: 5.9400005, z: 0.03432597}
   m_LocalScale: {x: 0.03856787, y: 0.8687895, z: 1}
   m_Children:
   - {fileID: 686118563}
@@ -50272,7 +50272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beatPos: {fileID: 535260870}
-  mazePos: {fileID: 434794055}
+  mazePos: {fileID: 838757250}
 --- !u!1 &1504088528 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8154976223380196495, guid: 291ddf5b20371004ea10901fa4b55608, type: 3}
@@ -52391,7 +52391,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564856480}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.6951683, y: 6.6000004, z: 0.34903875}
+  m_LocalPosition: {x: 0.6951683, y: 5.9400005, z: 0.34903875}
   m_LocalScale: {x: 0.06869253, y: 0.44320142, z: 1}
   m_Children:
   - {fileID: 47693284}

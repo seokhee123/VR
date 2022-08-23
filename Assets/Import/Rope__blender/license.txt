@@ -1,0 +1,11 @@
+Model Information:
+* title:	Rope | blender
+* source:	https://sketchfab.com/3d-models/rope-blender-77dc74a80c1d47e0af316c2630a74201
+* author:	Uliszs.3d (https://sketchfab.com/uliszs.3d)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Rope | blender" (https://sketchfab.com/3d-models/rope-blender-77dc74a80c1d47e0af316c2630a74201) by Uliszs.3d (https://sketchfab.com/uliszs.3d) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

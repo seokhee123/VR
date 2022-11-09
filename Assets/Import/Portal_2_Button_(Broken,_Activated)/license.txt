@@ -1,0 +1,11 @@
+Model Information:
+* title:	Portal 2 Button (Broken, Activated)
+* source:	https://sketchfab.com/3d-models/portal-2-button-broken-activated-1114d38e3fdf4952857d600e8b7d9aea
+* author:	ayo87 (https://sketchfab.com/ayo87)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Portal 2 Button (Broken, Activated)" (https://sketchfab.com/3d-models/portal-2-button-broken-activated-1114d38e3fdf4952857d600e8b7d9aea) by ayo87 (https://sketchfab.com/ayo87) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

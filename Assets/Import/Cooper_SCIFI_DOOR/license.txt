@@ -1,0 +1,11 @@
+Model Information:
+* title:	Cooper_SCIFI_DOOR
+* source:	https://sketchfab.com/3d-models/cooper-scifi-door-c24e516fdddb43d0b4da8cf2d60dc470
+* author:	THESTIG03 (https://sketchfab.com/THESTIG03)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Cooper_SCIFI_DOOR" (https://sketchfab.com/3d-models/cooper-scifi-door-c24e516fdddb43d0b4da8cf2d60dc470) by THESTIG03 (https://sketchfab.com/THESTIG03) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

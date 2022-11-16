@@ -10,7 +10,7 @@ public class ShootingRange : MonoBehaviour
     public GameObject spawnPoint;
     BoxCollider spawnCollider;
 
-    GameObject[] check;
+    public int check;
     public int stage = 0;
     public bool isGameStart = false;
 
@@ -27,7 +27,10 @@ public class ShootingRange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
- 
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            StartCoroutine("StartGame");
+        }
     }
 
     void OnCollisionEnter(Collision collision)
@@ -40,25 +43,40 @@ public class ShootingRange : MonoBehaviour
 
     IEnumerator StartGame()
     {
-        // Test Stage
-        for(int i = 0; i < 6; i++)
+        for (int i = 0; i < 6; i++)
         {
-            GameObject Clone = Instantiate(Cube, targetPos[i].position ,Quaternion.identity);
-            Clone.name = ("Cube");
+            Instantiate(Cube, targetPos[i].position, Quaternion.identity);
         }
-        gameObject.SetActive(false);
+        yield return null;
+        //yield return StartCoroutine("Stage1");
+        //if(stage == 1)
+        //yield return StartCoroutine("Stage2");
 
-
-        yield return new WaitForSeconds(2f);
-        StartCoroutine("Stage1");
     }
 
     IEnumerator Stage1()
     {
-        Instantiate(Cube, Return_RandomPosition(), Quaternion.identity);
-        Debug.Log("END");
         yield return null;
+        // int one = 0;
+        for (int i = 0; i < 6; i++)
+        {
+            Instantiate(Cube, targetPos[i].position, Quaternion.identity);
+        }
+        //stage++;
+
     }
+
+    /*IEnumerator Stage2()
+    {
+        SecondSpawn();
+        yield return new WaitForSeconds(1.0f);
+    }
+
+    void SecondSpawn()
+    {
+        Instantiate(Cube, Return_RandomPosition(), Quaternion.identity);
+
+    }*/
 
 
     // Box 콜라이더의 랜덤 포지션 반환 x,z   y = 0

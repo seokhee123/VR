@@ -84609,6 +84609,10 @@ MonoBehaviour:
   - {fileID: 631883373}
   - {fileID: 1846901890}
   Cube: {fileID: 1265111290557384291, guid: 3162cb3cbfab03d439f25d6c0fb8880f, type: 3}
+  cubeEffect: {fileID: 0}
+  spawnPoint: {fileID: 0}
+  stage: 0
+  isGameStart: 0
 --- !u!65 &2017069790
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -93523,15 +93527,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5359941810114901179, guid: 60909acaa11ca8c4da342fd7e75cd81c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.777
+      value: 6.483
       objectReference: {fileID: 0}
     - target: {fileID: 5359941810114901179, guid: 60909acaa11ca8c4da342fd7e75cd81c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.526
+      value: 0.706
       objectReference: {fileID: 0}
     - target: {fileID: 5359941810114901179, guid: 60909acaa11ca8c4da342fd7e75cd81c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.568
+      value: 3.565
       objectReference: {fileID: 0}
     - target: {fileID: 5359941810114901179, guid: 60909acaa11ca8c4da342fd7e75cd81c, type: 3}
       propertyPath: m_LocalRotation.w

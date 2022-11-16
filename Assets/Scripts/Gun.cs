@@ -5,11 +5,11 @@ using UnityEngine;
 public class Gun : MonoBehaviour
 {
     RaycastHit hit;
-    float maxDistance = 20f;
+    float maxDistance = 50f;
     bool floorCheck = false;
     bool isGameStart;
     bool targetCheck = false;
-    int floorNum = 0;
+    int num;
 
     public float speed = 40;
     public GameObject bullet;
@@ -17,6 +17,10 @@ public class Gun : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip audioClip;
 
+    private void Awake()
+    {
+        //num = GetComponent<ShootingRange>().check;
+    }
     public void Fire()
     {
         //GameObject spawnedBullet = Instantiate(bullet, barrel.position, barrel.rotation);
@@ -31,6 +35,7 @@ public class Gun : MonoBehaviour
             }
             else if (hit.collider.gameObject.name == "Cube")
             {
+                
                 Destroy(hit.collider.gameObject);
             }
             else

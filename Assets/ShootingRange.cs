@@ -8,6 +8,8 @@ public class ShootingRange : MonoBehaviour
     public GameObject Cube;
     public GameObject cubeEffect;
     public GameObject spawnPoint;
+    public GameObject DropL;
+    public GameObject DropR;
     BoxCollider spawnCollider;
 
     public int check;
@@ -22,6 +24,7 @@ public class ShootingRange : MonoBehaviour
     void Start()
     {
         gameObject.SetActive(true);
+        StartCoroutine(StartGame());
     }
 
     // Update is called once per frame
@@ -41,43 +44,35 @@ public class ShootingRange : MonoBehaviour
         }
     }
 
+    int stagenum;
     IEnumerator StartGame()
     {
-        for (int i = 0; i < 6; i++)
+        while (true)
         {
-            Instantiate(Cube, targetPos[i].position, Quaternion.identity);
+            stagenum = Random.Range(0, 4);
+            if (stagenum == 0)
+            {
+                Stage1();
+            }
+            else
+            {
+                Stage2();
+            }
+            yield return new WaitForSeconds(2.0f);
         }
-        yield return null;
-        //yield return StartCoroutine("Stage1");
-        //if(stage == 1)
-        //yield return StartCoroutine("Stage2");
-
     }
 
-    IEnumerator Stage1()
+    void Stage1()
     {
-        yield return null;
-        // int one = 0;
-        for (int i = 0; i < 6; i++)
-        {
-            Instantiate(Cube, targetPos[i].position, Quaternion.identity);
-        }
-        //stage++;
-
+        int i = Random.Range(0, 6);
+        Instantiate(Cube, targetPos[i].position, Quaternion.identity);
     }
 
-    /*IEnumerator Stage2()
+    void Stage2()
     {
-        SecondSpawn();
-        yield return new WaitForSeconds(1.0f);
+        GameObject DroplObj = Instantiate(Cube, DropL.transform.position, Quaternion.identity);
+        //DroplObj.GetComponent<Rigidbody>();
     }
-
-    void SecondSpawn()
-    {
-        Instantiate(Cube, Return_RandomPosition(), Quaternion.identity);
-
-    }*/
-
 
     // Box 콜라이더의 랜덤 포지션 반환 x,z   y = 0
     Vector3 Return_RandomPosition()

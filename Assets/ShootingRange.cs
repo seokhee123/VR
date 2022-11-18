@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShootingRange : MonoBehaviour
 {
     public Transform[] targetPos;
+    public GameObject Drop;
     public GameObject Cube;
     public GameObject cubeEffect;
     public GameObject spawnPoint;
@@ -47,6 +48,7 @@ public class ShootingRange : MonoBehaviour
     int stagenum;
     IEnumerator StartGame()
     {
+        gameObject.transform.position = Drop.transform.position;
         while (true)
         {
             stagenum = Random.Range(0, 4);
@@ -54,9 +56,17 @@ public class ShootingRange : MonoBehaviour
             {
                 Stage1();
             }
-            else
+            else if (stagenum == 1)
             {
                 Stage2();
+            }
+            else if(stagenum == 2)
+            {
+                Stage3();
+            }
+            else
+            {
+                Stage4();
             }
             yield return new WaitForSeconds(2.0f);
         }
@@ -70,8 +80,19 @@ public class ShootingRange : MonoBehaviour
 
     void Stage2()
     {
-        GameObject DroplObj = Instantiate(Cube, DropL.transform.position, Quaternion.identity);
+        //GameObject DroplObjL = Instantiate(Cube, DropL.transform.position, Quaternion.identity);
         //DroplObj.GetComponent<Rigidbody>();
+    }
+
+    void Stage3()
+    {
+        GameObject DropObjR = Instantiate(Cube, DropR.transform.position, Quaternion.identity);
+    }
+
+    void Stage4()
+    {
+        GameObject DrawL = Instantiate(Cube, DropL.transform.position, Quaternion.identity);
+        DrawL.GetComponent<Rigidbody>().AddForce(300, 300, 0);
     }
 
     // Box 콜라이더의 랜덤 포지션 반환 x,z   y = 0

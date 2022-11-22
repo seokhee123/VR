@@ -13,7 +13,8 @@ public class ShootingRange : MonoBehaviour
     public GameObject DropR;
     BoxCollider spawnCollider;
 
-    public int check;
+    [Header("Stage Check")]
+    [Tooltip("Stage Number")] public int check;
     public int stage = 0;
     public bool isGameStart = false;
 

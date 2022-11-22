@@ -72845,7 +72845,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 16375
+    m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -84608,9 +84608,13 @@ MonoBehaviour:
   - {fileID: 660664633}
   - {fileID: 631883373}
   - {fileID: 1846901890}
+  Drop: {fileID: 0}
   Cube: {fileID: 1265111290557384291, guid: 3162cb3cbfab03d439f25d6c0fb8880f, type: 3}
   cubeEffect: {fileID: 0}
   spawnPoint: {fileID: 0}
+  DropL: {fileID: 0}
+  DropR: {fileID: 0}
+  check: 0
   stage: 0
   isGameStart: 0
 --- !u!65 &2017069790

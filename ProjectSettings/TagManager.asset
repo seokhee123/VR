@@ -8,6 +8,7 @@ TagManager:
   - Saber
   - Bullet
   - Scale
+  - Magazine
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - Blue
   - Red
   - Maze
-  - 
+  - Icon
   - 
   - 
   - 

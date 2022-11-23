@@ -20,4 +20,9 @@ public class SunToNight : MonoBehaviour
             RenderSettings.fogDensity = 0.01f;
         }
     }
+
+    public void Night()
+    {
+        RenderSettings.fogDensity = 0.1f;
+    }
 }

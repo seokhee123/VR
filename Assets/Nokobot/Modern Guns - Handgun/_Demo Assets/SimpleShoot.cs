@@ -21,6 +21,10 @@ public class SimpleShoot : MonoBehaviour
     [Tooltip("Bullet Speed")] [SerializeField] private float shotPower = 500f;
     [Tooltip("Casing Ejection Speed")] [SerializeField] private float ejectPower = 150f;
 
+    private float shootDistance = 100f;
+    RaycastHit hit;
+    public GameObject shooting;
+
     public AudioSource source;
     public AudioClip fireSound;
     public AudioClip reload;
@@ -62,11 +66,31 @@ public class SimpleShoot : MonoBehaviour
         if(magazine && magazine.numberOfBullet > 0)
         {
             gunAnimator.SetTrigger("Fire");
+            if(Physics.Raycast(transform.position, transform.forward * shootDistance, out hit, shootDistance))
+            {
+                GameObject rayhit = hit.collider.gameObject;
+                Debug.Log(rayhit.name);
+                if(rayhit.name == "Shooting Start")
+                {
+                    rayhit.GetComponent<ShootingRange>().StartCoroutine("StartGame");
+                }
+                else if (hit.collider.gameObject.CompareTag("Enemy"))
+                {
+                    shooting.GetComponent<ShootingRange>().score++;
+                    Destroy(rayhit.gameObject);
+                    Debug.Log("맞음");
+                }
+            }
         }
         else
         {
             source.PlayOneShot(noAmmo);
         }
+    }
+
+    private void Update()
+    {
+        Debug.DrawRay(transform.position, transform.forward * shootDistance, Color.blue, 0.3f);
     }
 
 

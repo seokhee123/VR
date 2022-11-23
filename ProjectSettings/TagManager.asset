@@ -9,6 +9,7 @@ TagManager:
   - Bullet
   - Scale
   - Magazine
+  - Enemy
   layers:
   - Default
   - TransparentFX

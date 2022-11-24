@@ -37,7 +37,7 @@ public class ShootingRange : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            StartCoroutine("StartGame");
+            
         }
         if(score == 5)
         {

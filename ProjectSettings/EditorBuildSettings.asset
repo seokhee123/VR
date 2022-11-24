@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GunRoom.unity
     guid: 40cfcfe3c1bf6a94d960f0f85c9c63b0
+  - enabled: 1
+    path: Assets/Scenes/scene001.unity
+    guid: 8ba464a4d6319ae4c84c31c5fda83c7d
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: dfa2a84b7f9dea54db7d0f4fb62769ec, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 646d19ab781a94c4fb6a303a4f6e55d6, type: 2}

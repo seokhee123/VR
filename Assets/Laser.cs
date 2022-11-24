@@ -20,7 +20,7 @@ public class Laser : MonoBehaviour
         Debug.DrawRay(transform.position, transform.forward * distance, Color.red);
         if (Physics.Raycast(transform.position, transform.forward, out hit, distance, layermask))
         {
-            GameObject.Find("XR Origin").GetComponent<Scene>().MazeRoom();
+            //GameObject.Find("XR Origin").GetComponent<Scene>().MazeRoom();
         }
     }
 }

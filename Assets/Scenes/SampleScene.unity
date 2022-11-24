@@ -9547,6 +9547,49 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!1 &288435210
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 288435212}
+  - component: {fileID: 288435211}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &288435211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288435210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b14db3d35f5a24991945ba5088693e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &288435212
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288435210}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 520.94073, y: -803.94464, z: 697.4587}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 59
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &289473692
 GameObject:
   m_ObjectHideFlags: 0
@@ -12292,9 +12335,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81b14db3d35f5a24991945ba5088693e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beatPos: {fileID: 535260870}
-  mazePos: {fileID: 838757250}
-  gunPos: {fileID: 0}
 --- !u!114 &381564899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24824,9 +24864,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81b14db3d35f5a24991945ba5088693e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beatPos: {fileID: 535260870}
-  mazePos: {fileID: 838757250}
-  gunPos: {fileID: 973337548}
 --- !u!114 &746624555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56074,9 +56111,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81b14db3d35f5a24991945ba5088693e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beatPos: {fileID: 535260870}
-  mazePos: {fileID: 434794055}
-  gunPos: {fileID: 0}
 --- !u!65 &1452193309
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58814,9 +58848,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81b14db3d35f5a24991945ba5088693e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beatPos: {fileID: 535260870}
-  mazePos: {fileID: 838757250}
-  gunPos: {fileID: 0}
 --- !u!1 &1504088528 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8154976223380196495, guid: 291ddf5b20371004ea10901fa4b55608, type: 3}

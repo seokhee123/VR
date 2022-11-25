@@ -2,33 +2,47 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+public enum EnemyState
+{
+    TestObj,
+    Zombie,
+    Target
+}
 
 public class Enemy : MonoBehaviour
 {
-    NavMeshAgent agent;
-
-    [SerializeField]
-    Transform target;
-
-    private void Awake()
+    NavMeshAgent nav;
+    public EnemyState enemyState;
+    public int zombieHp;
+    Animator animator;
+    public void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
+        zombieHp = 3;
     }
-
-    void Update()
+    public void ObjControll()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        switch (enemyState)
         {
-            agent.SetDestination(target.position);
+            case EnemyState.Target: // 타겟 obj
+                Destroy(gameObject);
+                break;
+            case EnemyState.Zombie: // 좀비 obj
+                zombieHp--;
+                Debug.Log("좀비");
+                Debug.Log(zombieHp);
+                if (zombieHp == 0)
+                {
+                    animator.SetBool("isDead", true);
+                    Invoke("Destroy",3f);
+                }
+                break;
         }
     }
 
 
-    /*private void OnCollisionEnter(Collision collision)
+    public void Destory()
     {
-        if(collision.gameObject.tag == "Bullet")
-        {
-            Destroy(gameObject);
-        }
-    }*/
+        Destroy(gameObject);
+    }
 }

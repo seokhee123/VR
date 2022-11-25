@@ -24,6 +24,7 @@ public class SimpleShoot : MonoBehaviour
     private float shootDistance = 100f;
     RaycastHit hit;
     public GameObject shooting;
+    Enemy enemy;
 
     public AudioSource source;
     public AudioClip fireSound;
@@ -69,17 +70,15 @@ public class SimpleShoot : MonoBehaviour
             if(Physics.Raycast(transform.position, transform.forward * shootDistance, out hit, shootDistance))
             {
                 GameObject rayhit = hit.collider.gameObject;
-                Debug.Log(rayhit.name);
                 if(rayhit.name == "Shooting Start")
                 {
                     rayhit.GetComponent<ShootingRange>().StartCoroutine("StartGame");
                 }
-                else if (hit.collider.gameObject.CompareTag("Enemy"))
+                if(rayhit.tag == "Enemy")
                 {
-                    shooting.GetComponent<ShootingRange>().score++;
-                    Destroy(rayhit.gameObject);
-                    Debug.Log("맞음");
+                    rayhit.GetComponent<Enemy>().ObjControll();
                 }
+                
             }
         }
         else

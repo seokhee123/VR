@@ -17,6 +17,10 @@ public class ShootingRange : MonoBehaviour
     public int stage = 0;
     public bool isGameStart = false;
 
+    public int score;
+    [Header("Room Refrences")]
+    public GameObject room;
+
     public void Awake()
     {
         spawnCollider = spawnPoint.GetComponent<BoxCollider>();
@@ -25,7 +29,7 @@ public class ShootingRange : MonoBehaviour
     void Start()
     {
         gameObject.SetActive(true);
-        StartCoroutine(StartGame());
+        //StartCoroutine(StartGame());
     }
 
     // Update is called once per frame
@@ -33,10 +37,19 @@ public class ShootingRange : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            StartCoroutine("StartGame");
+            
+        }
+        if(score == 5)
+        {
+            Roomopen();
+            GetComponent<SunToNight>().Night();
         }
     }
 
+    void Roomopen()
+    {
+        Destroy(room);
+    }
     void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Bullet")
@@ -48,28 +61,12 @@ public class ShootingRange : MonoBehaviour
     int stagenum;
     IEnumerator StartGame()
     {
-        gameObject.transform.position = Drop.transform.position;
-        while (true)
+        for(int i = 0;i<targetPos.Length; i++)
         {
-            stagenum = Random.Range(0, 4);
-            if (stagenum == 0)
-            {
-                Stage1();
-            }
-            else if (stagenum == 1)
-            {
-                Stage2();
-            }
-            else if(stagenum == 2)
-            {
-                Stage3();
-            }
-            else
-            {
-                Stage4();
-            }
-            yield return new WaitForSeconds(2.0f);
+            Instantiate(Cube, targetPos[i].position, Quaternion.identity);
+
         }
+        yield return null;
     }
 
     void Stage1()

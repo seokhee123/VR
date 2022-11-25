@@ -34,6 +34,7 @@ public class Enemy : MonoBehaviour
                 if (zombieHp == 0)
                 {
                     animator.SetBool("isDead", true);
+
                     Invoke("Destroy",3f);
                 }
                 break;

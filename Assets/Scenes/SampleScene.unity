@@ -39434,7 +39434,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38513ed550f1ca845ba12243fb69ebf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1357495167}
+  enemyState: 0
+  zombieHp: 0
 --- !u!136 &974499706
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -85978,7 +85979,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040145599}
   m_LocalRotation: {x: 0.69939137, y: -0, z: -0, w: 0.71473897}
-  m_LocalPosition: {x: -1.023, y: 1.39, z: -3.896}
+  m_LocalPosition: {x: -1.608, y: 1.477, z: -3.896}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

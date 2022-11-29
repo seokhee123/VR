@@ -15,8 +15,11 @@ public class Enemy : MonoBehaviour
     public EnemyState enemyState;
     public int zombieHp;
     Animator animator;
+    GameObject target;
     public void Start()
     {
+        target = GameObject.Find("XR Origin");
+        nav = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
         zombieHp = 3;
     }
@@ -34,11 +37,25 @@ public class Enemy : MonoBehaviour
                 if (zombieHp == 0)
                 {
                     animator.SetBool("isDead", true);
-
                     Invoke("Destroy",3f);
                 }
                 break;
         }
+    }
+
+    public void Update()
+    {
+        if(nav.destination != target.transform.position)
+        {
+            animator.SetBool("isMove", true);
+            nav.SetDestination(target.transform.position);
+        }
+        else
+        {
+            animator.SetBool("isMove", false);
+            nav.SetDestination(transform.position);
+        }
+
     }
 
 
